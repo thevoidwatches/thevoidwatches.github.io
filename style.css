@@ -146,8 +146,8 @@ input.PL,input.number{
     overflow-y: auto;
 }
 p{
-    color: #4b0082;/*darkgreen;*/
+    color: indigo;/*darkgreen;*/
 }
 #holder h3{
-    color: #4b0082;/*darkgreen;*/
+    color: indigo;/*darkgreen;*/
 }
