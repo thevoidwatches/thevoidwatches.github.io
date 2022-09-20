@@ -26,7 +26,7 @@
 <body onload="main()">
     <div id="header">
         <h2>Mutants & Masterminds Encounter Calculator</h2>
-        <a id="logo" href="https://emeraldcityicons.obsidianportal.com/">
+        <a id="logo" href="https://scc.miraheze.org/wiki/Main_Page">
             <img alt="Join the Starlight City Champions! A community roleplaying group for Mutants and Masterminds!"
                  src="images/SSC.png">
         </a>
@@ -42,7 +42,7 @@
         <div id="settings" class="holder">
             <div>
                 <h3>Power Level:</h3>
-                <input type="number" min="1" value="8" id="PL" onchange="update()">
+                <input type="number" min="1" value="10" id="PL" onchange="update()">
             </div>
             <div>
                 <h3>Number of Players:</h3>
@@ -69,7 +69,13 @@
         <div id="minionBlock">
             <button type="button" id="addMin" onclick="add('minion')">Add Minion</button>
             <button type="button" id="clearMinion" onclick="document.getElementById('minion').innerHTML=''">Clear Minions</button>
+            <button type="button" id="addForce" onclick="add('force')">Add Force</button>
+            <button type="button" id="clearForce" onclick="document.getElementById('force').innerHTML=''">Clear Forces</button>
+            <button type="button" id="clearBoth"
+                    onclick="document.getElementById('minion').innerHTML='';document.getElementById('force').innerHTML=''">Clear
+                Forces</button>
             <div id="minion"></div>
+            <div id="force"></div>
         </div>
     </div>
 </body>
